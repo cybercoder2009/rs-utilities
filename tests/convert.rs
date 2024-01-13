@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod tests {
 
-    use utilities_rs::convert::str_to_u8_32;
+    use utilities::convert::str_to_u8_32;
 
     #[test]
     fn test_str_to_u8_32() {

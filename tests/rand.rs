@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod tests {
 
-    use utilities_rs::rand::{rand_usize, rand_string};    
+    use utilities::rand::{rand_usize, rand_string};    
 
     #[test]
     fn test_rand_usize() {
