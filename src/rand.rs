@@ -15,3 +15,14 @@ pub fn rand_string(min: usize, max: usize) -> String {
     })
     .collect()
 }
+
+pub fn rand_letters(min: usize, max: usize) -> String {
+    let characters: &str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let mut rng: ThreadRng = thread_rng();
+    let len: usize = rand_usize(min, max);
+    (0..len).map(|_| {
+        let idx = rng.gen_range(0..characters.len());
+        characters.chars().nth(idx).unwrap()
+    })
+    .collect()
+}
