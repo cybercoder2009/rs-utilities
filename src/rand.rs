@@ -16,7 +16,7 @@ pub fn rand_string(min: usize, max: usize) -> String {
     .collect()
 }
 
-pub fn rand_letters(min: usize, max: usize) -> String {
+pub fn rand_alphabets(min: usize, max: usize) -> String {
     let characters: &str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let mut rng: ThreadRng = thread_rng();
     let len: usize = rand_usize(min, max);
