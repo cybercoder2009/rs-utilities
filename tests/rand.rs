@@ -1,14 +1,14 @@
 #[cfg(test)]
 mod tests {
 
-    use utilities::rand::{rand_usize, rand_string};    
+    use utilities::rand::{rand_number, rand_string};    
 
     #[test]
     fn test_rand_usize() {
         let min: usize = 0;
         let max: usize = 100;
         for _ in 0..100 {
-            let rng: usize = rand_usize(min, max);
+            let rng: usize = rand_number::<usize>(min, max);
             assert!(rng >= min);
             assert!(rng <= max);
         }
